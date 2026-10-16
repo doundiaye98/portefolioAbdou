@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initContactForm();
     initThemeToggle();
     initTypingEffect();
+    initProjectFilters();
 });
 
 function initNavigation() {
@@ -177,6 +178,35 @@ function initThemeToggle() {
             ? '<i class="fas fa-sun"></i>'
             : '<i class="fas fa-moon"></i>';
         localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    });
+}
+
+function initProjectFilters() {
+    const root = document.querySelector('#projets');
+    if (!root) return;
+
+    const buttons = root.querySelectorAll('.project-filters button');
+    const items = root.querySelectorAll('[data-kind]');
+    const groups = root.querySelectorAll('.projects-group');
+
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const filter = btn.dataset.filter;
+
+            buttons.forEach(other => {
+                const active = other === btn;
+                other.classList.toggle('is-active', active);
+                other.setAttribute('aria-pressed', active ? 'true' : 'false');
+            });
+
+            items.forEach(item => {
+                item.hidden = filter !== 'all' && item.dataset.kind !== filter;
+            });
+
+            groups.forEach(group => {
+                group.hidden = !group.querySelector('[data-kind]:not([hidden])');
+            });
+        });
     });
 }
 

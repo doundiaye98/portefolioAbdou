@@ -6,10 +6,10 @@
     <title>Abdou Ndiaye — Développeur Full Stack</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body class="light-mode">
-
+    <div class="page-glow" aria-hidden="true"></div>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -43,8 +43,10 @@
     <!-- Hero -->
     <section id="accueil" class="hero">
         <div class="hero-bg">
+            <div class="hero-mesh"></div>
             <div class="tech-grid"></div>
-            <div class="hero-accent-line"></div>
+            <div class="hero-orb hero-orb-a"></div>
+            <div class="hero-orb hero-orb-b"></div>
         </div>
         <div class="container hero-container">
             <div class="hero-content">
@@ -62,9 +64,9 @@
                         </span>
                     </h1>
                     <p class="hero-description reveal">
-                        Je crée des expériences numériques exceptionnelles avec une passion pour
-                        l'innovation et l'attention aux détails. Spécialisé dans le développement
-                        web moderne et les applications mobiles.
+                        Je conçois, développe et déploie des expériences numériques soignées —
+                        du site vitrine à la plateforme métier — avec une exigence forte sur
+                        la qualité, la performance et le détail.
                     </p>
                     <div class="hero-buttons reveal">
                         <a href="#projets" class="btn btn-primary">
@@ -78,7 +80,7 @@
                     </div>
                     <div class="hero-stats reveal">
                         <div class="hero-stat">
-                            <span class="hero-stat-num">5+</span>
+                            <span class="hero-stat-num">7+</span>
                             <span class="hero-stat-label">Projets</span>
                         </div>
                         <div class="hero-stat-divider"></div>
@@ -95,30 +97,29 @@
                 </div>
                 <div class="hero-visual reveal">
                     <div class="visual-card">
-                        <div class="code-snippet">
-                            <div class="code-header">
-                                <span class="code-dot red"></span>
-                                <span class="code-dot yellow"></span>
-                                <span class="code-dot green"></span>
-                                <span class="code-filename">developer.js</span>
+                        <div class="profile-stage">
+                            <div class="profile-frame">
+                                <img src="IMG_1601.jpg" alt="Abdou Ndiaye" class="profile-photo">
                             </div>
-                            <pre class="code-body"><code><span class="code-kw">const</span> dev = {
+                            <div class="code-snippet">
+                                <div class="code-header">
+                                    <span class="code-dot red"></span>
+                                    <span class="code-dot yellow"></span>
+                                    <span class="code-dot green"></span>
+                                    <span class="code-filename">abdou.js</span>
+                                </div>
+                                <pre class="code-body"><code><span class="code-kw">const</span> <span class="code-prop">dev</span> = {
   <span class="code-prop">name</span>: <span class="code-str">"Abdou Ndiaye"</span>,
   <span class="code-prop">role</span>: <span class="code-str">"Full Stack"</span>,
-  <span class="code-prop">skills</span>: [<span class="code-str">"React"</span>, <span class="code-str">"OpenAI"</span>, <span class="code-str">"SonarQube"</span>],
-  <span class="code-prop">passion</span>: <span class="code-str">"Créer du beau code"</span>
+  <span class="code-prop">focus</span>: [<span class="code-str">"Web"</span>, <span class="code-str">"IA"</span>, <span class="code-str">"Deploy"</span>]
 };</code></pre>
+                            </div>
                         </div>
-                        <div class="profile-wrapper">
-                            <div class="profile-image">
-                                <img src="WhatsApp Image 2025-06-17 à 16.41.30_e78ec457.jpg" alt="Abdou Ndiaye" class="profile-photo">
-                            </div>
-                            <div class="tech-stack-badges">
-                                <span><i class="fab fa-react"></i></span>
-                                <span><i class="fab fa-node-js"></i></span>
-                                <span><i class="fab fa-php"></i></span>
-                                <span><i class="fab fa-python"></i></span>
-                            </div>
+                        <div class="tech-stack-badges">
+                            <span title="React"><i class="fab fa-react"></i></span>
+                            <span title="Node.js"><i class="fab fa-node-js"></i></span>
+                            <span title="PHP"><i class="fab fa-php"></i></span>
+                            <span title="Python"><i class="fab fa-python"></i></span>
                         </div>
                     </div>
                 </div>
@@ -185,12 +186,16 @@
                         </p>
                         <p>
                             Aujourd'hui, je travaille chez <strong>P Record International</strong> dans l'audiovisuel, en participant à des couvertures événementielles, clips et séries.
-                            En parallèle, je développe aussi des solutions web chez <strong>Univers Diasporas</strong> et collabore avec <strong>AXIUM GROUP</strong> sur la plateforme de vote des Icône Awards.
+                            En parallèle, je développe, analyse et déploie des sites web chez <strong>Univers Diasporas</strong>
+                            (<a href="https://yombalmarket.com" target="_blank" rel="noopener">yombalmarket.com</a>,
+                            <a href="https://universdiaspora.com" target="_blank" rel="noopener">universdiaspora.com</a>,
+                            <a href="https://sunurufisquest.fr" target="_blank" rel="noopener">sunurufisquest.fr</a>)
+                            et collabore avec <strong>AXIUM GROUP</strong> sur la plateforme de vote des Icône Awards.
                         </p>
                     </div>
                     <div class="stats-bento">
                         <div class="stat-card reveal">
-                            <div class="stat-number" data-count="5">5+</div>
+                            <div class="stat-number" data-count="7">7+</div>
                             <div class="stat-label">Projets réalisés</div>
                         </div>
                         <div class="stat-card reveal">
@@ -306,11 +311,26 @@
                         <span class="timeline-date">Actuel</span>
                         <h3>Univers Diasporas</h3>
                         <span class="timeline-role">Développeur Web</span>
-                        <p>Développement et amélioration de fonctionnalités web, intégration de chatbots IA (OpenAI), maintenance et optimisation des pages. Gestion de projet avec Trello et Miro, analyse de code avec SonarQube, hébergement via Hostinger.</p>
+                        <p>Développement, analyse et déploiement de sites web : intégration de chatbots IA (OpenAI), maintenance, optimisation, gestion de projet (Trello / Miro), analyse de code (SonarQube) et hébergement (Hostinger).</p>
+                        <div class="sites-label">Sites déployés</div>
+                        <div class="deployed-sites">
+                            <a href="https://yombalmarket.com" target="_blank" rel="noopener" class="deployed-site">
+                                yombalmarket.com
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://universdiaspora.com" target="_blank" rel="noopener" class="deployed-site">
+                                universdiaspora.com
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://sunurufisquest.fr" target="_blank" rel="noopener" class="deployed-site">
+                                sunurufisquest.fr
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
                         <div class="timeline-tags">
-                            <span>Web</span>
-                            <span>OpenAI</span>
-                            <span>SonarQube</span>
+                            <span>Développement</span>
+                            <span>Analyse</span>
+                            <span>Déploiement</span>
                             <span>Hostinger</span>
                         </div>
                     </div>
@@ -423,101 +443,275 @@
             <div class="section-header reveal">
                 <span class="section-tag">04 — Projets</span>
                 <h2 class="section-title">Mes réalisations</h2>
-                <p class="section-subtitle">Projets phares et réalisations en cours</p>
+                <p class="section-subtitle">Sites en production et projets personnels, du portail public à la boutique en ligne.</p>
             </div>
-            <div class="projects-grid">
-                <article class="project-card reveal featured in-progress">
-                    <div class="project-image">
-                        <img src="PHOTO-2026-04-26-18-51-47.jpg" alt="ICÔNE by Amfa — AXIUM Vote" class="project-img axium-img" loading="lazy">
-                        <span class="project-status">En cours</span>
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://www.axiumgroup.org/vote/" class="project-link" target="_blank" rel="noopener" title="Voir le site">
-                                    <i class="fas fa-arrow-up-right-from-square"></i>
-                                </a>
-                            </div>
-                        </div>
+
+            <div class="projects-toolbar reveal">
+                <div class="projects-metrics">
+                    <div class="projects-metric">
+                        <strong>4</strong>
+                        <span>sites en ligne</span>
                     </div>
-                    <div class="project-content">
-                        <span class="project-num">01</span>
-                        <h3>AXIUM Vote — Icône Awards</h3>
-                        <p>Plateforme de vote en ligne pour la cérémonie Icône Awards d'AXIUM GROUP : vote public, espace jury, résultats et administration. Développée en collaboration avec le PDG d'Axium Groupe.</p>
+                    <div class="projects-metric">
+                        <strong>3</strong>
+                        <span>projets perso</span>
+                    </div>
+                </div>
+                <div class="project-filters" role="tablist" aria-label="Filtrer les projets">
+                    <button type="button" class="is-active" data-filter="all" aria-pressed="true">Tous</button>
+                    <button type="button" data-filter="live" aria-pressed="false">En ligne</button>
+                    <button type="button" data-filter="code" aria-pressed="false">Personnels</button>
+                </div>
+            </div>
+
+            <article class="project-feature reveal" data-kind="live">
+                <div class="project-feature-media">
+                    <img src="PHOTO-2026-04-26-18-51-47.jpg" alt="ICÔNE by Amfa — plateforme de vote AXIUM" loading="lazy">
+                    <span class="project-status"><span class="status-dot"></span>En ligne</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-meta">
+                        <span class="project-kind">Projet phare</span>
+                        <span class="project-kind project-kind-muted">AXIUM GROUP</span>
+                    </div>
+                    <h3>AXIUM Vote — Icône Awards</h3>
+                    <p>Plateforme de vote pour la cérémonie Icône Awards, conçue avec le PDG d'Axium Groupe : le public vote, le jury délibère, les résultats et l'édition se pilotent au même endroit.</p>
+                    <ul class="project-features">
+                        <li><i class="fas fa-check"></i> Vote public et espace jury</li>
+                        <li><i class="fas fa-check"></i> Résultats et suivi des éditions</li>
+                        <li><i class="fas fa-check"></i> Interface d'administration</li>
+                    </ul>
+                    <div class="project-foot">
                         <div class="project-tech">
                             <span class="tech-tag">PHP</span>
                             <span class="tech-tag">JavaScript</span>
                             <span class="tech-tag">Vote en ligne</span>
                             <span class="tech-tag">Espace Admin</span>
                         </div>
+                        <a class="project-cta" href="https://www.axiumgroup.org/vote/" target="_blank" rel="noopener">
+                            <span>Voir la plateforme</span>
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
                     </div>
-                </article>
-                <article class="project-card reveal">
-                    <div class="project-image">
-                        <img src="archéo-it.PNG" alt="Archéo-IT" class="project-img" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/doundiaye98/arch-o-it" class="project-link" target="_blank" rel="noopener" title="Voir le projet">
+                </div>
+            </article>
+
+            <div class="projects-group" data-group="live">
+                <div class="projects-group-head">
+                    <h3>Univers Diasporas</h3>
+                    <p>Conçus, analysés et mis en ligne</p>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card reveal" data-kind="live">
+                        <div class="project-media">
+                            <div class="browser">
+                                <div class="browser-bar">
+                                    <span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                                    <span class="browser-url">yombalmarket.com</span>
+                                </div>
+                                <div class="browser-stage tone-yombal">
+                                    <span class="site-logo-wrap">
+                                        <img src="logo-yombal.png" alt="" class="site-logo" loading="lazy">
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="project-status"><span class="status-dot"></span>En ligne</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="project-kind">Client</span>
+                                <span class="project-kind project-kind-muted">E-commerce</span>
+                            </div>
+                            <h3>Yombal Market</h3>
+                            <p class="project-tagline">Votre marché en poche</p>
+                            <p>Boutique de produits du terroir — Arraw, Thiakry, Fonio, Baobab — avec catalogue par rayons, commande et livraison.</p>
+                            <ul class="project-features">
+                                <li><i class="fas fa-check"></i> Catalogue produits et rayons</li>
+                                <li><i class="fas fa-check"></i> Parcours commande / livraison</li>
+                                <li><i class="fas fa-check"></i> Mise en production Hostinger</li>
+                            </ul>
+                            <div class="project-foot">
+                                <div class="project-tech">
+                                    <span class="tech-tag">PHP</span>
+                                    <span class="tech-tag">E-commerce</span>
+                                    <span class="tech-tag">Hostinger</span>
+                                </div>
+                                <a class="project-cta" href="https://yombalmarket.com" target="_blank" rel="noopener">
+                                    <span>Visiter le site</span>
                                     <i class="fas fa-arrow-up-right-from-square"></i>
                                 </a>
-                                <a href="https://github.com/doundiaye98/arch-o-it" class="project-link" target="_blank" rel="noopener" title="GitHub">
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" data-kind="live">
+                        <div class="project-media">
+                            <div class="browser">
+                                <div class="browser-bar">
+                                    <span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                                    <span class="browser-url">universdiaspora.com</span>
+                                </div>
+                                <div class="browser-stage tone-univers">
+                                    <span class="site-logo-wrap">
+                                        <img src="logo-univers-diaspora.png" alt="" class="site-logo" loading="lazy">
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="project-status"><span class="status-dot"></span>En ligne</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="project-kind">Client</span>
+                                <span class="project-kind project-kind-muted">Plateforme</span>
+                            </div>
+                            <h3>Univers Diaspora</h3>
+                            <p class="project-tagline">Faire de vos rêves une réalité</p>
+                            <p>Plateforme multi-services pour la diaspora : 13 pôles, de l'immobilier aux voyages, avec trois agences en Île-de-France.</p>
+                            <ul class="project-features">
+                                <li><i class="fas fa-check"></i> 13 pôles de services</li>
+                                <li><i class="fas fa-check"></i> Agences Paris 18e, 17e et Colombes</li>
+                                <li><i class="fas fa-check"></i> Avis clients et orientation</li>
+                            </ul>
+                            <div class="project-foot">
+                                <div class="project-tech">
+                                    <span class="tech-tag">PHP</span>
+                                    <span class="tech-tag">Analyse</span>
+                                    <span class="tech-tag">Déploiement</span>
+                                </div>
+                                <a class="project-cta" href="https://universdiaspora.com" target="_blank" rel="noopener">
+                                    <span>Visiter le site</span>
+                                    <i class="fas fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" data-kind="live">
+                        <div class="project-media">
+                            <div class="browser">
+                                <div class="browser-bar">
+                                    <span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                                    <span class="browser-url">sunurufisquest.fr</span>
+                                </div>
+                                <div class="browser-stage tone-sunuru">
+                                    <span class="site-logo-wrap">
+                                        <img src="logo-sunuru-icon.png" alt="" class="site-logo" loading="lazy">
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="project-status"><span class="status-dot"></span>En ligne</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="project-kind">Client</span>
+                                <span class="project-kind project-kind-muted">Service public</span>
+                            </div>
+                            <h3>Sunuru Fisquest — Rufisque Est</h3>
+                            <p class="project-tagline">Portail officiel de la commune</p>
+                            <p>Un seul espace pour les habitants : état civil, signalements, paiements, projets municipaux et documents publics.</p>
+                            <ul class="project-features">
+                                <li><i class="fas fa-check"></i> État civil et démarches</li>
+                                <li><i class="fas fa-check"></i> Signalements et paiements</li>
+                                <li><i class="fas fa-check"></i> Projets et structures locales</li>
+                            </ul>
+                            <div class="project-foot">
+                                <div class="project-tech">
+                                    <span class="tech-tag">Portail web</span>
+                                    <span class="tech-tag">Déploiement</span>
+                                    <span class="tech-tag">Hostinger</span>
+                                </div>
+                                <a class="project-cta" href="https://sunurufisquest.fr" target="_blank" rel="noopener">
+                                    <span>Visiter le site</span>
+                                    <i class="fas fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="projects-group" data-group="code">
+                <div class="projects-group-head">
+                    <h3>Projets personnels</h3>
+                    <p>Bases techniques et expérimentations</p>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card reveal" data-kind="code">
+                        <div class="project-media">
+                            <img src="archéo-it.PNG" alt="Interface d'Archéo-IT" class="project-img" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="project-kind">Personnel</span>
+                                <span class="project-kind project-kind-muted">Archivage</span>
+                            </div>
+                            <h3>Archéo-IT</h3>
+                            <p>Gestion et archivage numérique pour conserver et consulter des données historiques et culturelles.</p>
+                            <div class="project-foot">
+                                <div class="project-tech">
+                                    <span class="tech-tag">PHP</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">Bootstrap</span>
+                                </div>
+                                <a class="project-cta" href="https://github.com/doundiaye98/arch-o-it" target="_blank" rel="noopener">
+                                    <span>Voir sur GitHub</span>
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-content">
-                        <span class="project-num">02</span>
-                        <h3>Archéo-IT</h3>
-                        <p>Plateforme de gestion et d'archivage numérique pour la préservation de données historiques et culturelles.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">PHP</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Bootstrap</span>
+                    </article>
+
+                    <article class="project-card reveal" data-kind="code">
+                        <div class="project-media">
+                            <img src="E-commerce.webp" alt="Interface de la boutique E-commerce Shop" class="project-img" loading="lazy">
                         </div>
-                    </div>
-                </article>
-                <article class="project-card reveal">
-                    <div class="project-image">
-                        <img src="E-commerce.webp" alt="E-commerce Shop" class="project-img" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/doundiaye98/shop" class="project-link" target="_blank" rel="noopener"><i class="fas fa-arrow-up-right-from-square"></i></a>
-                                <a href="https://github.com/doundiaye98/shop" class="project-link" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="project-kind">Personnel</span>
+                                <span class="project-kind project-kind-muted">Boutique</span>
+                            </div>
+                            <h3>E-commerce Shop</h3>
+                            <p>Boutique complète : catalogue, panier, paiement Stripe et interface d'administration.</p>
+                            <div class="project-foot">
+                                <div class="project-tech">
+                                    <span class="tech-tag">PHP</span>
+                                    <span class="tech-tag">Stripe</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                </div>
+                                <a class="project-cta" href="https://github.com/doundiaye98/shop" target="_blank" rel="noopener">
+                                    <span>Voir sur GitHub</span>
+                                    <i class="fab fa-github"></i>
+                                </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-content">
-                        <span class="project-num">03</span>
-                        <h3>E-commerce Shop</h3>
-                        <p>Site e-commerce complet avec panier, paiement Stripe et interface admin.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">PHP</span>
-                            <span class="tech-tag">Stripe</span>
-                            <span class="tech-tag">JavaScript</span>
+                    </article>
+
+                    <article class="project-card reveal" data-kind="code">
+                        <div class="project-media">
+                            <img src="quizz.webp" alt="Interface du jeu de quiz" class="project-img" loading="lazy">
                         </div>
-                    </div>
-                </article>
-                <article class="project-card reveal">
-                    <div class="project-image">
-                        <img src="quizz.webp" alt="Jeu de Quiz" class="project-img" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/doundiaye98/arch-o-it" class="project-link" target="_blank" rel="noopener"><i class="fas fa-arrow-up-right-from-square"></i></a>
-                                <a href="https://github.com/doundiaye98/arch-o-it" class="project-link" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="project-kind">Personnel</span>
+                                <span class="project-kind project-kind-muted">Interactif</span>
+                            </div>
+                            <h3>Jeu de Quiz</h3>
+                            <p>Questions dynamiques, score en direct et sauvegarde de la progression dans le navigateur.</p>
+                            <div class="project-foot">
+                                <div class="project-tech">
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">HTML5</span>
+                                    <span class="tech-tag">LocalStorage</span>
+                                </div>
+                                <span class="project-cta is-static">
+                                    <span>Projet local</span>
+                                    <i class="fas fa-laptop"></i>
+                                </span>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-content">
-                        <span class="project-num">04</span>
-                        <h3>Jeu de Quiz</h3>
-                        <p>Application interactive avec scores et questions dynamiques.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">LocalStorage</span>
-                        </div>
-                    </div>
-                </article>
+                    </article>
+                </div>
             </div>
         </div>
     </section>
