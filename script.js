@@ -99,10 +99,33 @@ function initContactForm() {
     const form = document.querySelector('.contact-form');
     if (!form) return;
 
-    form.addEventListener('submit', e => {
+    form.addEventListener('submit', async e => {
         e.preventDefault();
-        showNotification('Message envoyé avec succès !', 'success');
-        form.reset();
+        const button = form.querySelector('button[type="submit"]');
+        const data = new FormData(form);
+        if (button) button.disabled = true;
+
+        try {
+            const response = await fetch(form.action || 'contact.php', {
+                method: 'POST',
+                body: data,
+                headers: { 'Accept': 'application/json' }
+            });
+            const result = await response.json().catch(() => ({}));
+            if (!response.ok || !result.ok) throw new Error('mail');
+            showNotification('Message envoyé. Je vous réponds rapidement.', 'success');
+            form.reset();
+        } catch {
+            const name = data.get('name') || '';
+            const email = data.get('email') || '';
+            const subject = data.get('subject') || 'Contact portfolio';
+            const message = data.get('message') || '';
+            const body = `Nom: ${name}\nEmail: ${email}\n\n${message}`;
+            window.location.href = `mailto:abdou.lourd2022@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            showNotification('La messagerie s’ouvre avec votre message.', 'info');
+        } finally {
+            if (button) button.disabled = false;
+        }
     });
 }
 
